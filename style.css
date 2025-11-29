@@ -1,0 +1,267 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #1e1e1e;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    z-index: 1000;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #333;
+    /* border-bottom: 3px solid #f00; */
+    padding: 16px 30px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.title {
+    font-size: 42px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* SOCIAL ICONS */
+.socials img {
+    width: 55px;
+    height: 55px;
+    margin: 0 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+/* INPUT BOX */
+.input-box {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* INPUT FIELD */
+.input-box input {
+    width: 100%;
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+}
+
+/* CLEAR BUTTON */
+.button-close {
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    border-radius: 8px;
+    color: red;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.button-close:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* PASTE BUTTON */
+.paste-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.paste-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* SUBMIT BUTTON */
+.submit {
+    background: #ff1d1d;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.submit:hover {
+    background: #d90000;
+}
+
+/* CARD MAIN */
+.card {
+    margin-top: 60px;
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    --webkit-backdrop-filter: blur(4px); /* Safari support */
+    box-sizing: border-box;
+}
+
+/* THUMB */
+.thumb-container {
+    width: 45%;
+}
+.thumb-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* INFO */
+.info {
+    width: 55%;
+}
+
+/* DOWNLOAD BTN */
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c60000;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #d6d6d6;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+/* LOADER */
+.hidden { display: none; }
+
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c60000;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+}
+
+.btn:hover {
+    background: #e2e2e2;
+}
+
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+
+    .title {
+        font-size: 32px;
+    }
+
+    .socials img {
+        width: 45px;
+        height: 45px;
+        margin: 0 8px;
+    }
+
+    .input-box {
+        
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .paste-btn,
+    .button-close,
+    .submit {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+.paste-btn,
+    .button-close{
+        display: none;
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+    .card {
+        align-items: center;
+        
+        flex-direction: column;
+        padding: 30px;
+    } .btn {
+        display: block;
+        text-align: center;
+margin: 0 auto;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .thumb-container,
+    .info {
+        width: 100%;
+    }
+}
+.loader { width: 48px; height: 48px; border: 5px solid #FFF; border-radius: 50%; display: inline-block; box-sizing: border-box; position: relative; animation: pulse 1s linear infinite; } .loader:after { content: ''; position: absolute; width: 48px; height: 48px; border: 5px solid #FFF; border-radius: 50%; display: inline-block; box-sizing: border-box; left: 50%; top: 50%; transform: translate(-50%, -50%); animation: scaleUp 1s linear infinite; } @keyframes scaleUp { 0% { transform: translate(-50%, -50%) scale(0) } 60% , 100% { transform: translate(-50%, -50%) scale(1)} } @keyframes pulse { 0% , 60% , 100%{ transform: scale(1) } 80% { transform: scale(1.2)} }
+@keyframes scaleUp { 0% { transform: translate(-50%, -50%) scale(0) } 60% , 100% { transform: translate(-50%, -50%) scale(1)} } @keyframes pulse { 0% , 60% , 100%{ transform: scale(1) } 80% { transform: scale(1.2)} }
