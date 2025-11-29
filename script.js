@@ -1,5 +1,5 @@
-// let baseUrl = "https://venom-devils-api.koyeb.app/download/";
-let baseUrl = "http://192.168.8.140:8000/download/";
+ let baseUrl = "https://venom-devils-api.koyeb.app/download/";
+//let baseUrl = "http://192.168.8.140:8000/download/";
 let usersApiKey = null;
 // Check for apikey in URL parameters
 if (location.search.includes("apikey=")) {
